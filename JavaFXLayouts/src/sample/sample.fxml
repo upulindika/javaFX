@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.GridPane?>
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/10.0.2-internal"
+		  fx:controller="sample.Controller" stylesheets="@styles.css">
+
+	<TextField fx:id="nameField" GridPane.rowIndex="0" GridPane.columnIndex="0" onKeyReleased="#handleKeyReleased"/>
+	<Button fx:id="helloButton" GridPane.columnIndex="0" GridPane.rowIndex="1" text="Click Me!" onAction="#onButtonClicked"/>
+	<Button fx:id="byeButton"  id="byeButton" GridPane.columnIndex="1" GridPane.rowIndex="1" text="Bye!" onAction="#onButtonClicked"/>
+	<CheckBox fx:id="myCheckBox" text="Clear the field after saying hello or bye" GridPane.rowIndex="2" GridPane.columnIndex="0"
+			  GridPane.columnSpan="2" onAction="#handleChange"/>
+	<Label fx:id="ourLabel" text="Nothing has happened" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+
+</GridPane>
